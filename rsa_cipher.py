@@ -111,8 +111,8 @@ def encrypt(key, message, block_size=DEFAULT_BLOCK_SIZE):
     # Enkripsi message
     # Using a key from a key file, encrypt the message and save it to a
     # file. Returns the encrypted message string.
-    # bongkar key
-    key_size, n, e_or_d = key
+
+    key_size, n, e_or_d = key  # bongkar key
 
     # Check that key size is greater than block size.
     if key_size < block_size * 8:  # * 8 to convert bytes to bits
